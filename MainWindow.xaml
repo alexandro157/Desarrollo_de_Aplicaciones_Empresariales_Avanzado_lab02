@@ -1,0 +1,39 @@
+﻿<Window x:Class="WPFLaboratorio02.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFLaboratorio02"
+        mc:Ignorable="d"
+        Title="SISTEMA DE CONTROL DE Balanza" Height="250" Width="500">
+
+
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0" Text="Login" FontSize="20" HorizontalAlignment="Center"/>
+
+            <Label Grid.Row="1" Content="Usuario:"/>
+            <TextBox Grid.Row="1" x:Name="UsernameTextBox" Width="200" Margin="10"/>
+
+            <Label Grid.Row="2" Content="Clave:"/>
+            <PasswordBox Grid.Row="2" x:Name="PasswordBox" Width="200" Margin="10"/>
+
+            <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Content="Acceder" Click="LoginButton_Click" Width="100" Margin="10"/>
+                <Button Content="Cancelar" Width="100" Margin="10"/>
+            </StackPanel>
+
+
+        </Grid>
+        <Label HorizontalAlignment="Center" Content="Version 4.1" Margin="-130,140,20,10" />
+        <Image Source="Imagenes/logo_1.jpg" Margin="188,0,278,206"/>
+    </Grid>
+
+</Window>
